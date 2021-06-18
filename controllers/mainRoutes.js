@@ -1,4 +1,5 @@
 const router = require('express').Router();
+
 // import models here
 
 //route for loading main page
