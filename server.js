@@ -23,7 +23,7 @@ const sess = {
 
 app.use(session(sess));
 
-//uncomment  below when ready -Jess
+//uncomment  lines below when ready -Jess
 
 //const hbs = exphbs.create({ helpers });
 // app.engine('handlebars', hbs.engine);

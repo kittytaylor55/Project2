@@ -1,5 +1,5 @@
 const router = require('express').Router();
-//const User model here  = require(' model path here ');
+//const User model here  = require(' model path here '); --> once User model is set up by Krystal
 
 // sign up to create new user
 router.post('/signup', async (req, res) => {
@@ -35,7 +35,7 @@ router.post('/login', async (req, res) => {
         .json({ message: 'Incorrect email or password. Please try again!' });
       return;
     }
-    const validPassword = await userData.checkPassword(req.body.password);
+    const validPassword = await userData.checkPassword(req.body.password); //checkPassword defined in User model (see mini project)
     if (!validPassword) {
       res
         .status(400)
