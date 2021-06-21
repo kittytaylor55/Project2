@@ -17,4 +17,16 @@ if (process.env.JAWSDB_URL) {
   );
 }
 
+//added this so that it would correct the user login 
+function extendDefaultFields(defaults, session) {
+
+  console.log((session.passport && session.passport['user']) ? session.passport['user'] : null);
+
+  return {
+      data: defaults.data,
+      expires: defaults.expires,
+      userid: (session.passport && session.passport['user']) ? session.passport['user'] : null
+  };
+}
+
 module.exports = sequelize;

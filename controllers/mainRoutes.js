@@ -5,7 +5,7 @@ const router = require('express').Router();
 //route for loading main page
 router.get('/', async (req, res) => {
   try {
-    // res.render('home page')
+    res.render('layouts/main')
   } catch (err) {
     res.status(500).json(err);
   }
