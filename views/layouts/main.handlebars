@@ -11,74 +11,57 @@
 </head>
 
 <body>
-  <header class="display-flex justify-space-between align-center p-2">
-    <h1>
-      Fitness App
-    </h1> 
-    <nav>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/profile">Profile</a>
-        </li>
-        <li class="nav-item">
-          {{#if loggedIn}}
-          <a class="nav-link" id="logout-btn">Log Out</a>
-          {{else}}
-          <a class="nav-link" href="/login">Sign Up</a>
-          {{/if}}
-        </li>
-      </ul>
-    </nav>
+<header class="display-flex justify-space-between align-center p-2">
+  <h1>
+    Fitness App
+  </h1> 
 
-
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item" href="/">
-        Home
-      </a>
-      <a class="navbar-item" href="/profile">
-       Profile
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
     </div>
 
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          {{#if loggedIn}}
-          <a class="button is-primary">
-            <strong>Logout</strong>
-          </a>
-          {{else}}
-          <a class="button is-primary" href="/login">
-            <strong>Log in</strong>
-          </a>
-          {{/if}}
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/">
+          Home
+        </a>
+        <a class="navbar-item" href="/profile">
+        Profile
+        </a>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            {{#if loggedIn}}
+            <a class="button is-primary">
+              <strong>Logout</strong>
+            </a>
+            {{else}}
+            <a class="button is-primary" href="/login">
+              <strong>Log in</strong>
+            </a>
+            {{/if}}
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 </header>
-  <main>
+
+<main>
     {{{ body }}}
-  </main>
+</main>
   <footer>
       
   </footer>
   {{#if loggedIn}}
-  <script src="../../public/js/login.js"></script>
+  <script src="/js/logout.js"></script>
   {{/if}}
 </body>
 
