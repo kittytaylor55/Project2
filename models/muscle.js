@@ -1,37 +1,35 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Project extends Model {}
+class Muscle extends Model {}
 
-muscle.init(
-  {
-    id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
+Muscle.init({
+  id: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+    primaryKey: true,
+    autoIncrement: true,
+  },
+
+  exercise_id: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+    references: {
+      model: 'exercise',
+      key: 'id',
     },
+  },
 
-    exercise_id: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-      references: {
-        model: 'exercise',
-        key: 'id',
-      },
-    },
+  title: {
+    type: DataTypes.STRING,
+    allowNull: true,
+  },
 
-    title: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-  
-    sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
-    modelName: 'muscle',
-  }
-  );
+  sequelize,
+  timestamps: false,
+  freezeTableName: true,
+  underscored: true,
+  modelName: 'muscle',
+});
 
-module.exports = muscle;
+module.exports = Muscle;
