@@ -8,7 +8,7 @@ class User extends Model {
   }
 }
 
-User.init(
+user.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -31,11 +31,14 @@ User.init(
     password: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        len: [8],
+    
+    },
+    age: {
+      type: DataTypes.STRING,
+      
       },
     },
-  },
+
   {
     hooks: {
       beforeCreate: async (newUserData) => {
@@ -55,4 +58,4 @@ User.init(
   }
 );
 
-module.exports = User;
+module.exports = user;
