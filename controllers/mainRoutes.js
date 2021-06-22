@@ -5,7 +5,7 @@ const router = require('express').Router();
 //route for loading main page
 router.get('/', async (req, res) => {
   try {
-    res.render('layouts/main')
+    res.render('home');
   } catch (err) {
     res.status(500).json(err);
   }
@@ -14,21 +14,24 @@ router.get('/', async (req, res) => {
 //route for loading profile page
 router.get('/profile', async (req, res) => {
   try {
-    res.render(/*enter handelbars page here */);
+    res.render('profile');
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
 //Get login page
-router.get('/login', (req, res) => {
-  // If the user is already logged in, redirect the request to another route
-  if (req.session.loggedIn) {
-    res.redirect(/* enter handelbars page here*/);
-    return;
+router.get('/login', async (req, res) => {
+  try {
+    // If the user is already logged in, redirect the request to another route
+    if (req.session.loggedIn) {
+      res.redirect('profile');
+      return;
+    }
+    res.render('login');
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
   }
-
-  res.render('login');
 });
-
 module.exports = router;
