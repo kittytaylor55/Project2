@@ -6,12 +6,10 @@ const logoutUser = async () => {
   });
 
   if (response.ok) {
-    document.location.replace('/login'); // redirect user back to login screen?
+    document.location.replace('/'); // redirect user back to home-login
   } else {
     alert(response.statusText);
   }
 };
 
-document
-  .querySelector(/* log out button element #id */)
-  .addEventListener('click', logoutUser);
+document.querySelector('#logout-btn').addEventListener('click', logoutUser);
