@@ -17,6 +17,7 @@ Workout.belongsTo(Exercise, {
 });
 
 Workout.belongsTo(User, {
+
   foreignKey: 'user_id',
 });
 

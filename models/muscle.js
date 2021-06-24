@@ -3,6 +3,7 @@ const sequelize = require('../config/connection');
 
 class Muscle extends Model {}
 
+
 Muscle.init({
   id: {
     type: DataTypes.INTEGER,
@@ -10,6 +11,7 @@ Muscle.init({
     primaryKey: true,
     autoIncrement: true,
   },
+
 
   exercise_id: {
     type: DataTypes.INTEGER,
