@@ -1,5 +1,4 @@
 const User = require('./User');
-const Muscle = require('./Muscle');
 const Exercise = require('./Exercise');
 const Workout = require('./Workout');
 
@@ -20,13 +19,4 @@ Workout.belongsTo(User, {
 
   foreignKey: 'user_id',
 });
-
-Muscle.hasMany(Exercise, {
-  foreignKey: 'exercise_id',
-});
-
-Exercise.belongsTo(Muscle, {
-  foreignKey: 'exercise_id',
-});
-
-module.exports = { User, Workout, Muscle, Exercise };
+module.exports = { User, Workout, Exercise };
