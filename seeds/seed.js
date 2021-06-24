@@ -1,4 +1,3 @@
-console.log('hello');
 const sequelize = require('../config/connection');
 const { Exercise, User } = require('../models');
 const exercise = require('./exercise.json');

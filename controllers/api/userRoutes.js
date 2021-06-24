@@ -1,5 +1,5 @@
 const router = require('express').Router();
-//const User model here  = require(' model path here '); --> once User model is set up by Krystal
+const { User } = require('../../models');
 
 // sign up to create new user
 router.post('/signup', async (req, res) => {
