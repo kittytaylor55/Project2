@@ -2,13 +2,9 @@
 const loginUser = async (event) => {
   event.preventDefault();
 
-  const email = document
-    .querySelector(/* enter email input element #id here */)
-    .value.trim();
+  const email = document.querySelector('#emailLoginInput').value.trim();
 
-  const password = document
-    .querySelector(/* enter password input element #id here */)
-    .value.trim();
+  const password = document.querySelector('#passwordLoginInput').value.trim();
 
   if (email && password) {
     const response = await fetch('/api/users/login', {
@@ -18,8 +14,8 @@ const loginUser = async (event) => {
     });
 
     if (response.ok) {
-      // successful login redirects user to... --> which page????
-      document.location.replace(/* insert page route here */);
+      // successful login redirects user to profile
+      document.location.replace('profile');
     } else {
       alert(response.statusText);
       console.log(response);
@@ -27,6 +23,4 @@ const loginUser = async (event) => {
   }
 };
 
-document
-  .querySelector(/* Log in button element #id */)
-  .addEventListener('click', loginUser);
+document.querySelector('#login-btn').addEventListener('click', loginUser);

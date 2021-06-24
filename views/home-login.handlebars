@@ -1,64 +1,95 @@
 {{!-- log in page --}}
 {{!-- Login form --}}
-<div class="field">
-<label class="label">Email</label>
-    <p class="control has-icons-left has-icons-right">
-        <input class="input" type="email" placeholder="Email">
-        <span class="icon is-small is-left">
-            <i class="fas fa-envelope"></i>
-        </span>
-        <span class="icon is-small is-right">
-            <i class="fas fa-check"></i>
-        </span>
-    </p>
-</div>
-
-<div class="field">
-    <label class="label">Password</label>
-    <p class="control has-icons-left">
-        <input class="input" type="password" placeholder="Password">
-        <span class="icon is-small is-left">
-            <i class="fas fa-lock"></i>
-        </span>
-    </p>
-</div>
-
-<div class="field">
-    <p class="control">
-        <button class="button is-success">
-            Login
-        </button>
-    </p>
+<div class="box is-fluid mb-5">
+    <div class="notification is-primary">
+        <h1 class="subtitle has-text-centered">
+            Log in
+        </h1>
+        <div class="field">
+        <label class="label">Email</label>
+            <p class="control has-icons-left has-icons-right">
+                <input class="input" type="email" placeholder="Email" id='emailLoginInput'>
+                <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <span class="icon is-small is-right">
+                    <i class="fas fa-check"></i>
+                </span>
+            </p>
+        </div>
+        <div class="field">
+            <label class="label">Password</label>
+            <p class="control has-icons-left">
+                <input class="input" type="password" placeholder="Password" id='passwordLoginInput'>
+                <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i>
+                </span>
+            </p>
+        </div>
+        <div class="field">
+            <p class="control has-text-centered">
+                <button class="button is-dark" id="login-btn">
+                    Login
+                </button>
+            </p>
+        </div>
+    </div>
 </div>
 
 {{!-- sign up form --}}
-<div class="field">
-    <label class="label">Email</label>
-    <p class="control has-icons-left has-icons-right">
-        <input class="input" type="email" placeholder="Email">
-        <span class="icon is-small is-left">
-            <i class="fas fa-envelope"></i>
-        </span>
-        <span class="icon is-small is-right">
-            <i class="fas fa-check"></i>
-        </span>
-    </p>
-</div>
-
-<div class="field">
-    <label class="label">Password</label>
-    <p class="control has-icons-left">
-        <input class="input" type="password" placeholder="Password">
-        <span class="icon is-small is-left">
-            <i class="fas fa-lock"></i>
-        </span>
-    </p>
-</div>
-
-<div class="field">
-    <p class="control">
-        <button class="button is-success">
+<div class="box is-fluid mb-5">
+    <div class="notification is-primary">
+        <h1 class="subtitle has-text-centered">
             Sign up
-        </button>
-    </p>
+        </h1>
+        <div class="field">
+            <label class="label">Email</label>
+            <p class="control has-icons-left has-icons-right">
+                <input class="input" type="email" placeholder="Email" id='emailSignupInput'>
+                <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <span class="icon is-small is-right">
+                    <i class="fas fa-check"></i>
+                </span>
+            </p>
+        </div>
+        <div class="field">
+            <label class="label">Password</label>
+            <p class="control has-icons-left">
+                <input class="input" type="password" placeholder="Password" id='pwSignupInput'>
+                <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i>
+                </span>
+            </p>
+        </div>
+        <div class="field">
+            <label class="label">Age</label>
+            <p class="control has-icons-left">
+                <input class="input" type="text" placeholder="Age" id='ageInput'>
+            </p>
+        </div>
+        <div class="field">
+            <label class="label">Weight</label>
+            <p class="control has-icons-left">
+                <input class="input" type="text" placeholder="Weight" id='weightInput'>
+            </p>
+        </div>
+        <div class="field">
+            <label class="label">Height</label>
+            <p class="control has-icons-left">
+                <input class="input" type="text" placeholder="Height" id='heightInput'>
+            </p>
+        </div>
+        <div class="field">
+            <p class="control has-text-centered">
+                <button class="button is-dark" id="signup-btn">
+                    Sign up
+                </button>
+            </p>
+        </div>
+    </div>
 </div>
+
+<script src="./js/login.js"></script>
+<script src="./js/signup.js"></script>
