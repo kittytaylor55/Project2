@@ -6,6 +6,7 @@ router.post('/signup', async (req, res) => {
   try {
     const newUserData = await User.create({
       age: req.body.age,
+      name: req.body.name,
       weight: req.body.weight,
       height: req.body.height,
       email: req.body.email,
