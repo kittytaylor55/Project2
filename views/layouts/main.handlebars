@@ -5,35 +5,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitness App</title>
-  <link rel="stylesheet" href="/css/jass.css">
-  <script src="../../public/js/exercise.js"></script>
-  <script src="../../public/js/equipment.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  {{!-- <script src="../../public/js/exercise.js"></script>
+  <script src="../../public/js/equipment.js"></script> --}}
 </head>
 
 <body>
-  <header class="display-flex justify-space-between align-center p-2">
-    <h1>
-      Fitness App
-    </h1>
+<header class="hero is-dark mb-5">
+  <div class="hero-body"></div>
+  <h1 class="title has-text-centered is-size-1">
+    Fitness App
+  </h1> 
 
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
-    
-    {{#if logged_in}}
-    <nav>
-      <button class="btn" id="logout">logout</button>
-    </nav>
-    {{/if}}
-  </header>
-  <main class="container container-fluid mt-5">
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/">
+          Home
+        </a>
+        <a class="navbar-item" href="/profile">
+        Profile
+        </a>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            {{#if loggedIn}}
+            <a class="button is-primary">
+              <strong>Logout</strong>
+            </a>
+            {{else}}
+            <a class="button is-primary" href="/login">
+              <strong>Log in</strong>
+            </a>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  </div>
+</header>
+
+<main>
     {{{ body }}}
-  </main>
+</main>
   <footer>
       
   </footer>
-
-  
-  {{#if logged_in}}
-  <script src="../../public/js/login.js"></script>
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
   {{/if}}
 </body>
 

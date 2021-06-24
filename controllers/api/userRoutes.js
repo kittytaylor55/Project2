@@ -5,7 +5,9 @@ const router = require('express').Router();
 router.post('/signup', async (req, res) => {
   try {
     const newUserData = await User.create({
-      username: req.body.username,
+      age: req.body.age,
+      weight: req.body.weight,
+      height: req.body.height,
       email: req.body.email,
       password: req.body.password,
     });

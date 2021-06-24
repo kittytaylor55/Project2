@@ -11,7 +11,7 @@ Workout.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    
+
     user_id: {
       type: DataTypes.INTEGER,
       allowNull: true,

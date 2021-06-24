@@ -8,7 +8,7 @@ class User extends Model {
   }
 }
 
-user.init(
+User.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -31,13 +31,11 @@ user.init(
     password: {
       type: DataTypes.STRING,
       allowNull: false,
-    
     },
     age: {
       type: DataTypes.STRING,
-      
-      },
     },
+  },
 
   {
     hooks: {
@@ -46,7 +44,10 @@ user.init(
         return newUserData;
       },
       beforeUpdate: async (updatedUserData) => {
-        updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+        updatedUserData.password = await bcrypt.hash(
+          updatedUserData.password,
+          10
+        );
         return updatedUserData;
       },
     },
