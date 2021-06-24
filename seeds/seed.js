@@ -22,13 +22,7 @@ const seedDataBase = async () => {
 
   await seedExercises();
 
-  // for(const set of exercise) {
-  //     await Exercise.create({
-  //         ...set,
-  //     })
-  // }
-
   process.exit(0);
 };
-console.log(sequelize, 'line 32');
+//console.log(sequelize, 'line 32');
 seedDataBase();

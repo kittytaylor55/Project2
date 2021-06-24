@@ -2,16 +2,25 @@
   {
     "name": "Sal",
     "email": "sal@hotmail.com",
-    "password": "password12345"
+    "password": "password12345",
+    "age": "27",
+    "height": "5'4",
+    "weight": "155"
   },
   {
     "name": "Lernantino",
     "email": "lernantino@gmail.com",
-    "password": "password12345"
+    "password": "password12345",
+    "age": "32",
+    "height": "5'9",
+    "weight": "185"
   },
   {
     "name": "Amiko",
     "email": "amiko2k20@aol.com",
-    "password": "password12345"
+    "password": "password12345",
+    "age": "25",
+    "height": "6'2",
+    "weight": "200"
   }
 ]
