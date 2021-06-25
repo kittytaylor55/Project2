@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-//route for loading profile page
+// //route for loading profile page
 router.get('/profile', checkAuth, async (req, res) => {
   try {
     const profileData = await User.findAll({
@@ -36,6 +36,32 @@ router.get('/profile', checkAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+// GET /api/users/1
+// router.get('/:id', (req, res) => {
+//   User.findOne({
+//     attributes: { exclude: ['password'] },
+//     where: {
+//       id: req.params.id,
+//     },
+//   })
+//     .then((dbUserData) => {
+//       if (!dbUserData) {
+//         res.status(404).json({ message: 'No user found with this id' });
+//         return;
+//       }
+//       res.json(dbUserData);
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//       res.status(500).json(err);
+//     });
+// });
+// router.get('/profile', (req, res) => {
+
+//   res.render('profile', { loggedIn: req.session.loggedIn });
+//   // console.log(user);
+// });
 
 //route for generating random workout page
 router.get('/workout', checkAuth, async (req, res) => {
