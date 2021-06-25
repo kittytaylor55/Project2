@@ -1,7 +1,27 @@
+<div class="card mb-5">
+  <div class="card-content">
+    <div class="media">
+      <div class="media-content">
+        <p class="title is-2 has-text-centered">Welcome, {{name}}!</p>
+        <p class="subtitle is-5 has-text-centered">y{{email}}</p>
+      </div>
+    </div>
 
-<div class="row">
-  <div class="col-auto">
-    <h2>Welcome, {{user.name}}!</h2>
+    <div class="content has-text-centered">
+      Age: {{age}}
+      <br>
+      Weight: {{weight}} Lbs
+      <br>
+      Height: {{height}}
+      <br>
+    </div>
   </div>
 </div>
 
+{{!-- <button class="button is-primary is-outlined">Outlined</button> --}}
+<div class="field">
+  <p class="control has-text-centered">
+    <button class="button is-primary is-outlined" id="workout-btn">
+      Get Workout
+    </button>
+</div>
