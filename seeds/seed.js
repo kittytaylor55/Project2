@@ -1,34 +1,27 @@
-console.log("hello")
-const sequelize = require("../config/connection")
-const {Exercise, User} = require("../models")
-const exercise = require("./exercise.json")
-const userData = require("./userData.json")
+const sequelize = require('../config/connection');
+const { Exercise, User } = require('../models');
+const exercise = require('./exercise.json');
+const userData = require('./userData.json');
 
 const seedDataBase = async () => {
-    
-    await sequelize.sync({
-        force: true 
+  await sequelize.sync({
+    force: true,
+  });
+  const seedUsers = () =>
+    User.bulkCreate(userData, {
+      individualHooks: true,
+      returning: true,
     });
-    const seedUsers = () => User.bulkCreate(userData,{
-        individualHooks: true, 
-        returning: true,
-    });
 
-    const seedExercises = () => Exercise.bulkCreate(exercise)
+  const seedExercises = () => Exercise.bulkCreate(exercise);
 
-console.log("on line 18")
+  console.log('on line 18');
 
-    await seedUsers();
+  await seedUsers();
 
-    await seedExercises();
+  await seedExercises();
 
-    // for(const set of exercise) {
-    //     await Exercise.create({
-    //         ...set,
-    //     })
-    // }
-
-    process.exit(0);
-}
-console.log(sequelize,"line 32")
+  process.exit(0);
+};
+//console.log(sequelize, 'line 32');
 seedDataBase();

@@ -1,11 +1,12 @@
 const router = require('express').Router();
-//const User model here  = require(' model path here '); --> once User model is set up by Krystal
+const { User } = require('../../models');
 
 // sign up to create new user
 router.post('/signup', async (req, res) => {
   try {
     const newUserData = await User.create({
       age: req.body.age,
+      name: req.body.name,
       weight: req.body.weight,
       height: req.body.height,
       email: req.body.email,
@@ -47,7 +48,7 @@ router.post('/login', async (req, res) => {
     req.session.save(() => {
       req.session.loggedIn = true;
       req.session.id = userData.id;
-      req.session.username = userData.username;
+      req.session.name = userData.name;
       res
         .status(200)
         .json({ user: userData, message: 'You are now logged in!' });

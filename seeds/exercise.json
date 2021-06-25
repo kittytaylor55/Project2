@@ -1,7 +1,7 @@
 [
   {
     "name": "Running",
-    "description":"<p>Run at a steady pace, for tips on running,</p>\n<p> </p>\n<p> watch: https://www.youtube.com/watch?v=fQ7ewHFw_I8<p>",
+    "description":"Run at a steady pace, for tips on running,  watch: https://www.youtube.com/watch?v=fQ7ewHFw_I8",
     "has_interval": true,
     "has_repetitions": false,
     "intensity":3,
@@ -9,7 +9,7 @@
   },
   {
     "name": "Push Ups",
-    "description":"<p>For tips on how to do a push up,</p>\n<p> </p>\n<p> watch: https://www.youtube.com/watch?v=IODxDxX7oi4<p>",
+    "description":"For tips on how to do a push up,  watch: https://www.youtube.com/watch?v=IODxDxX7oi4",
     "has_interval": true,
     "has_repetitions": true,
     "intensity":6,
@@ -17,7 +17,7 @@
   },
   {
     "name": "Sit Ups",
-    "description":"<p> To see how to do a correct sit up,</p>\n<p> </p>\n<p> watch: https://www.youtube.com/watch?v=s3PPU_2z9qo<p>",
+    "description":"To see how to do a correct sit up,  watch: https://www.youtube.com/watch?v=s3PPU_2z9qo",
     "has_interval": true,
     "has_repetitions": false,
     "intensity":1,
@@ -25,7 +25,7 @@
   },
   {
     "name": "Pull Ups",
-    "description":"<p> For tips on how to do a pull up,</p>\n<p> </p>\n<p> watch: https://www.youtube.com/watch?v=XeErfmGSwfE<p>",
+    "description":" For tips on how to do a pull up,  watch: https://www.youtube.com/watch?v=XeErfmGSwfE",
     "has_interval": true,
     "has_repetitions": false,
     "intensity":6,
@@ -33,7 +33,7 @@
   },
   {
     "name": "Squat",
-    "description":"<p> for tips on ,</p>\n<p> </p>\n<p> watch: <p>",
+    "description":"For tips on how to squat,  watch: https://youtu.be/aclHkVaku9U ",
     "has_interval": true,
     "has_repetitions": true,
     "intensity":1,
@@ -41,7 +41,7 @@
   },
   {
     "name": "Swimming",
-    "description":"<p> for tips on ,</p>\n<p> </p>\n<p> watch: <p>",
+    "description":"For tips on how to swim,  watch: https://youtu.be/pFN2n7CRqhw",
     "has_interval": true,
     "has_repetitions": false,
     "intensity":2,
@@ -49,7 +49,7 @@
   },
   {
     "name": "Biking",
-    "description":"<p> for tips on ,</p>\n<p> </p>\n<p> watch: <p>",
+    "description":" for tips on biking,  watch: https://youtu.be/Cw13WkdJ4t0",
     "has_interval": true,
     "has_repetitions": false,
     "intensity":2,
@@ -57,7 +57,7 @@
   },
   {
     "name": "Benchpress",
-    "description":"<p> for tips on ,</p>\n<p> </p>\n<p> watch: <p>",
+    "description":"For tips on Bench press,  watch: https://youtu.be/vthMCtgVtFw",
     "has_interval": false,
     "has_repetitions": true,
     "intensity":4,
@@ -65,7 +65,7 @@
   },
   {
     "name": "2 Handed Kettlebell Swing",
-    "description":"<p>Two Handed Russian Style Kettlebell swing</p>",
+    "description":"For tips on 2 Handed Kettlebell Swing, watch: https://youtu.be/uMqcv_O7ppI",
     "has_interval": false,
     "has_repetitions": true,
     "intensity":2,
@@ -73,7 +73,7 @@
   },
   {
     "name": "Arnold Shoulder Press",
-    "description":"<p>Very common shoulder exercise.</p>\n<p> </p>\n<p>As shown here: https://www.youtube.com/watch?v=vj2w851ZHRM</p>",
+    "description":"Very common shoulder exercise. As shown here: https://www.youtube.com/watch?v=vj2w851ZHRM",
     "has_interval": false,
     "has_repetitions": true,
     "intensity":2,
@@ -81,7 +81,7 @@
   },
   {
     "name": "Axe Hold",
-    "description":"<p>Grab dumbbells and extend arms to side and hold as long as you can</p>",
+    "description":"Grab dumbbells and extend arms to side and hold as long as you can",
     "has_interval": true,
     "has_repetitions": false,
     "intensity":8,
@@ -89,7 +89,7 @@
   },
   {
     "name": "Back Squat",
-    "description":"<p>Place a barbell in a rack just below shoulder-height. </p>",
+    "description":"Very common shoulder exercise. As shown here: https://youtu.be/RpBf5ZRdvWE",
     "has_interval": false,
     "has_repetitions": true,
     "intensity":8,
@@ -97,7 +97,7 @@
   },
   {
     "name": "Barbell Ab Rollout",
-    "description":"<p>Place a barbell in a rack just below shoulder-height. Dip under the bar to put it behind the neck across the top of the back.</p>",
+    "description":"Place a barbell on the floor at your feet. Bending at the waist, grip the barbell with a shoulder with overhand grip. With a slow controlled motion, roll the bar out so that your back is straight.Roll back up to the starting position.",
     "has_interval": false,
     "has_repetitions": true,
     "intensity":4,
@@ -105,7 +105,7 @@
   },
   {
     "name": "Barbell Hack Squats",
-    "description":"<p>Perform leg squats with barbell behind your legs</p>",
+    "description":"Perform leg squats with barbell behind your legs. As shwon here: https://youtu.be/64PFHtq5XO8",
     "has_interval": true,
     "has_repetitions": false,
     "intensity":7,
@@ -113,7 +113,7 @@
   },
   {
     "name": "Barbell Lunges",
-    "description":"<p>Put barbell on the back of your shoulders. </p>",
+    "description":"Put a barbell on the back of your shoulders. Stand upright, then take the first step forward. Step should bring you forward so that your supporting leg’s knee can touch the floor. Then stand back up and repeat with the other leg.",
     "has_interval": false,
     "has_repetitions": true,
     "intensity":5,
@@ -121,7 +121,7 @@
   },
   {
     "name": "Barbell Triceps Extension",
-    "description":"<p>Position barbell overhead with narrow overhand grip.</p>",
+    "description":"Position barbell overhead with narrow overhand grip. Lower forearm behind upper arm with elbows remaining overhead. Extend forearm overhead. Lower and repeat.",
     "has_interval": false,
     "has_repetitions": true,
     "intensity":6,
@@ -129,38 +129,12 @@
   },
   {
     "name": "Bear Walk",
-    "description":"<p>-Rest your weight on </p>",
+    "description":"For instructions on how to bear walk, watch: https://youtu.be/Wgt1vdZ_YYk",
     "has_interval": true,
     "has_repetitions": true,
     "intensity":9,
     "equipment_required" : ""
-  },
-  {
-    "name": "Bear Walk",
-    "description":"",
-    "has_interval": false,
-    "has_repetitions": true,
-    "intensity":9,
-    "equipment_required" : "Barbell"
-  },
-  {
-    "name": "Bear Walk",
-    "description":"",
-    "has_interval": false,
-    "has_repetitions": true,
-    "intensity":9,
-    "equipment_required" : "Barbell"
-  },
-  {
-    "name": "Bear Walk",
-    "description":"",
-    "has_interval": false,
-    "has_repetitions": true,
-    "intensity":9,
-    "equipment_required" : "Barbell"
-  }
- 
-  
+  } 
 ]
 
 

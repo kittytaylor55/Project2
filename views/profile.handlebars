@@ -1,6 +1,28 @@
-<div class="row">
-  <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
+<div class="card mb-5">
+  <div class="card-content">
+    <div class="media">
+      <div class="media-content">
+        <p class="title is-2 has-text-centered">Welcome, {{name}}!</p>
+        <p class="subtitle is-5 has-text-centered">y{{email}}</p>
+      </div>
+    </div>
+    <div class="content has-text-centered">
+      Age: {{age}}
+      <br>
+      Weight: {{weight}} Lbs
+      <br>
+      Height: {{height}}
+      <br>
+    </div>
   </div>
 </div>
 
+<div class="field">
+  <p class="control has-text-centered">
+      <a href="/workout">
+        <button class="button is-primary is-outlined" id="workout-btn">
+          Get Workout
+        </button>
+      </a>
+    </p>
+</div>

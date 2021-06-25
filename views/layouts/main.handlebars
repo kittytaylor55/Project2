@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fitness App</title>
+  <title>Fitness Nuts</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   {{!-- <script src="../../public/js/exercise.js"></script>
   <script src="../../public/js/equipment.js"></script> --}}
@@ -14,9 +14,11 @@
 <header class="hero is-dark mb-5">
   <div class="hero-body"></div>
   <h1 class="title has-text-centered is-size-1">
-    Fitness App
+    Fitness Nuts
   </h1> 
-
+  <h2 class="subtitle has-text-centered">
+    We're nuts about fitness!
+  </h2>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -40,11 +42,11 @@
         <div class="navbar-item">
           <div class="buttons">
             {{#if loggedIn}}
-            <a class="button is-primary">
+            <a class="button is-primary" id="logout-btn">
               <strong>Logout</strong>
             </a>
             {{else}}
-            <a class="button is-primary" href="/login">
+            <a class="button is-primary" href="/">
               <strong>Log in</strong>
             </a>
             {{/if}}
@@ -59,9 +61,15 @@
 <main>
     {{{ body }}}
 </main>
-  <footer>
-      
-  </footer>
+ 
+{{!-- <footer class="footer is-dark">
+  <div class="content has-text-centered is-dark">
+    <h2>
+      h
+    </h2>
+  </div>
+</footer> --}}
+
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
   {{/if}}
