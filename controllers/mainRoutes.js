@@ -37,4 +37,16 @@ router.get('/profile', checkAuth, async (req, res) => {
   }
 });
 
+//route for generating random workout page
+router.get('/workout', checkAuth, async (req, res) => {
+  try {
+    // const workoutData = await Exercise.findByPk();
+
+    // res.render('workout', { variable, loggedIn: true });
+    res.render('workout');
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;
