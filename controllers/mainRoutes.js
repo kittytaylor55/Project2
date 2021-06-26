@@ -20,16 +20,14 @@ router.get('/', async (req, res) => {
 // //route for loading profile page
 router.get('/profile', checkAuth, async (req, res) => {
   try {
-    const profileData = await User.findAll({
-      where: { id: req.session.id },
-    });
+    const profileData = await User.findByPk(req.session.userId);
 
     if (!profileData) {
       res.status(404).json({ message: 'No profile with ID found' });
       return;
     }
 
-    const profile = profileData.map((user) => user.get({ plain: true }));
+    const profile = profileData.get({ plain: true });
 
     res.render('profile', { profile, loggedIn: true });
   } catch (err) {
@@ -37,39 +35,20 @@ router.get('/profile', checkAuth, async (req, res) => {
   }
 });
 
-// GET /api/users/1
-// router.get('/:id', (req, res) => {
-//   User.findOne({
-//     attributes: { exclude: ['password'] },
-//     where: {
-//       id: req.params.id,
-//     },
-//   })
-//     .then((dbUserData) => {
-//       if (!dbUserData) {
-//         res.status(404).json({ message: 'No user found with this id' });
-//         return;
-//       }
-//       res.json(dbUserData);
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//       res.status(500).json(err);
-//     });
-// });
-// router.get('/profile', (req, res) => {
-
-//   res.render('profile', { loggedIn: req.session.loggedIn });
-//   // console.log(user);
-// });
-
 //route for generating random workout page
 router.get('/workout', checkAuth, async (req, res) => {
   try {
-    // const workoutData = await Exercise.findByPk();
+    const workoutData = await Exercise.findAll();
 
-    // res.render('workout', { variable, loggedIn: true });
-    res.render('workout');
+    if (!workoutData) {
+      res.status(404).json({ message: 'No workouts found' });
+      return;
+    }
+    // console.log(workoutData);
+    const sets = workoutData.map((exercise) => exercise.get({ plain: true }));
+    // console.log(set);
+
+    res.render('workout', { sets, loggedIn: true });
   } catch (err) {
     res.status(500).json(err);
   }

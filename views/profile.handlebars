@@ -2,16 +2,16 @@
   <div class="card-content">
     <div class="media">
       <div class="media-content">
-        <p class="title is-2 has-text-centered">Welcome, {{name}}!</p>
-        <p class="subtitle is-5 has-text-centered">y{{email}}</p>
+        <p class="title is-2 has-text-centered">Welcome, {{profile.name}}!</p>
+        <p class="subtitle is-5 has-text-centered">{{profile.email}}</p>
       </div>
     </div>
     <div class="content has-text-centered">
-      Age: {{age}}
+      Age: {{profile.age}}
       <br>
-      Weight: {{weight}} Lbs
+      Weight: {{profile.weight}} Lbs
       <br>
-      Height: {{height}}
+      Height: {{profile.height}}
       <br>
     </div>
   </div>

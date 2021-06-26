@@ -12,10 +12,9 @@ router.post('/signup', async (req, res) => {
       email: req.body.email,
       password: req.body.password,
     });
-
     req.session.save(() => {
+      req.session.userId = newUserData.id;
       req.session.loggedIn = true;
-
       res.status(200).json(newUserData);
     });
   } catch (err) {
@@ -47,7 +46,7 @@ router.post('/login', async (req, res) => {
     }
     req.session.save(() => {
       req.session.loggedIn = true;
-      req.session.id = userData.id;
+      req.session.userId = userData.id;
       req.session.name = userData.name;
       res
         .status(200)

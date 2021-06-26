@@ -1,21 +1,26 @@
+{{#each sets as |set| }}
 <form class="box">
     <div class="field">
-        <label class="label has-text-centered is-2">{{name}}</label>
+        <label class="label has-text-centered is-2">{{set.name}}</label>
         <div class="control">
-            <p>1{{description}}</p>
+            <p>Description: {{set.description}}</p>
         </div>
         <div class="control">
-            <p>2{{has_interval}}</p>
+            <p>Intervals: {{set.has_interval}}</p>
         </div>
         <div class="control">
-            <p>3{{has_repetitions}}</p>
+            <p>Reps: {{set.has_repetitions}}</p>
         </div>
         <div class="control">
-            <p>4{{intensity}}</p>
+            <p>Intensity: {{set.intensity}}</p>
         </div>
         <div class="control">
-            <p>5{{equipment_required}}</p>
+            <p>Equipment Required: {{set.equipment_required}}</p>
+        </div>
+        <div class="control has-text-centered">
+            <p>Numbers of reps and intervals is decided by user's workout preference or workout method.</p>
         </div>
     </div>
-
 </form>
+
+{{/each}}
