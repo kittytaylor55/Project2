@@ -28,6 +28,7 @@ router.get('/profile', checkAuth, async (req, res) => {
     }
 
     const profile = profileData.get({ plain: true });
+
     res.render('profile', { profile, loggedIn: true });
   } catch (err) {
     res.status(500).json(err);
@@ -37,19 +38,17 @@ router.get('/profile', checkAuth, async (req, res) => {
 //route for generating random workout page
 router.get('/workout', checkAuth, async (req, res) => {
   try {
-    const workoutData = await Exercise.findOne(req.params.id, {
-      order: [Sequelize.fn('RAND')],
-    });
+    const workoutData = await Exercise.findAll();
 
     if (!workoutData) {
-      res.status(404).json({ message: 'No workout with ID found' });
+      res.status(404).json({ message: 'No workouts found' });
       return;
     }
-    console.log(workoutData);
-    const set = workoutData.get({ plain: true });
-    console.log(set);
+    // console.log(workoutData);
+    const sets = workoutData.map((exercise) => exercise.get({ plain: true }));
+    // console.log(set);
 
-    res.render('workout', { set, loggedIn: true });
+    res.render('workout', { sets, loggedIn: true });
   } catch (err) {
     res.status(500).json(err);
   }

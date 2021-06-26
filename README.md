@@ -7,9 +7,17 @@ GITHUB Source
 
 ## Application Screenshots
 
-![Fitness Nuts Prfile](https://user-images.githubusercontent.com/76461629/123502901-6e14c400-d604-11eb-8912-b8b74fecfad6.png)
-
 ![Fitness Nuts Homepage](https://user-images.githubusercontent.com/76461629/123502904-710fb480-d604-11eb-9b48-e32d552dc1cb.png)
+
+---
+
+![Fitness Nuts Pr0file](https://user-images.githubusercontent.com/76461629/123517912-7e568e80-d658-11eb-97d2-bc73829d123d.png)
+
+---
+
+![Workouts](https://user-images.githubusercontent.com/76461629/123518374-713a9f00-d65a-11eb-8705-ba0a1b097951.png)
+
+---
 
 ## Description
 
