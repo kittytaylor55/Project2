@@ -3,7 +3,7 @@
 GITHUB Source
 [GitHub Repo](https://github.com/kittytaylor55/Project2.git)
 
-[Heroku Deployed APP]()
+[Heroku Deployed APP](https://fitness-nuts.herokuapp.com/)
 
 ## Application Screenshots
 
